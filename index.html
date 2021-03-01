@@ -5,10 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first github page</title>
+    <title>Navigation menus - Exercise 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
+    <div class="container">
+        <header>מפעל ממתקים</header>
+        <nav>
+            <div class="dropdown">
+                <a href="javascript:void(0)">אודות   ▾</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="openPage('חברי דירקטוריון');return false;">חברי דירקטוריון</a>
+                    <a href="#" onclick="openPage('הנהלה');return false;">הנהלה</a>
+                    <a href="#" onclick="openPage('עובדים');return false;">עובדים</a>
+                    <a href="#"></a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="javascript:void(0)">מוצרים   ▾</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="openPage('חטיפים');return false;">חטיפים</a>
+                    <a href="#" onclick="openPage('שוקולדים');return false;">שוקולדים</a>
+                    <a href="#" onclick="openPage('סוכריות');return false;">סוכריות</a>
+                    <a href="#" onclick="openPage('מארזים');return false;">מארזים</a>
+                </div>
+            </div>
+
+            <div>
+                <a href="#" onclick="openPage('שאלות ותשובות');return false;">שאלות ותשובות</a>
+            </div>
+
+            <div>
+                <a href="#" onclick="openPage('איך להגיע?', true);return false;">איך להגיע?</a>
+            </div>
+
+            <div>
+                <a href="mailto: info@site.com">צור קשר</a>
+            </div>
+
+        </nav>
+
+        <div class="content"></div>
+
+    </div>
 
 </body>
 

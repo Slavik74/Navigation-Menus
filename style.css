@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    direction: rtl;
+    margin: 0px;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+header {
+    font-size: 48px;
+    background-image: linear-gradient(180deg, #aaa, #fff);
+    padding: 10px;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-image: linear-gradient(180deg, #b30909, #ee1414);
+}
+
+nav>div {
+    display: inline-block;
+}
+
+nav>div>a,
+.dropdown-content>a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav>div>a:hover,
+.dropdown-content>a:hover {
+    color: white;
+    background-color: #9f0000;
+}
+
+nav>ul>li.active>a {
+    background-color: #740707;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    background-image: linear-gradient(180deg, #b30909, #ee1414);
+    position: absolute;
+    top: 100%;
+    width: fit-content;
+    display: none;
+    box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+}
+
+.dropdown:hover>.dropdown-content {
+    display: block;
+}
+
+.content {
+    background-image: url('https://thumbs.dreamstime.com/z/bright-colorful-candy-background-decorated-borders-pink-wood-table-halloween-trick-treat-childrens-birthday-75565612.jpg');
+    height: 100%;
+}
